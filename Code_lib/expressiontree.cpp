@@ -122,7 +122,7 @@ void ExpressionTree::buildfromPostfix(const string &postfix) // Saif Sabry
           TreeNode* leftChild = s.top();
           s.pop();
 
-          TreeNode* newNode = new TreeNode(ch);
+          TreeNode* newNode = new TreeNode(string(1, ch));
           newNode->left = leftChild;
           newNode->right = rightChild;
           s.push(newNode);

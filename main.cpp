@@ -18,7 +18,7 @@ int main()
 
     Tree.buildfromPostfix(PostfixExpression);
     if (Tree.Root_Accesser()) {
-        cerr << "Infix Expression: " << Tree.ToInfix(Tree.Root_Accesser()).toStdString() << endl;
+        cerr << "Infix Expression: " << Tree.ToInfix(Tree.Root_Accesser()) << endl;
     } else {
         cerr << "Error: Tree was not constructed!" << endl;
     }
@@ -27,7 +27,7 @@ int main()
 
     Tree.buildfromInfix(InfixExpression);
     if (Tree.Root_Accesser()) {
-        cerr << "Postfix Expression: " << Tree.ToPostfix(Tree.Root_Accesser()).toStdString() << endl;
+        cerr << "Postfix Expression: " << Tree.ToPostfix(Tree.Root_Accesser()) << endl;
     } else {
         cerr << "Error: Tree was not constructed!" << endl;
     }
@@ -36,7 +36,7 @@ int main()
 
     Tree.buildfromPrefix(PrefixExpression);
     if (Tree.Root_Accesser()) {
-        cerr << "Postfix Expression: " << Tree.ToPostfix(Tree.Root_Accesser()).toStdString() << endl;
+        cerr << "Postfix Expression: " << Tree.ToPostfix(Tree.Root_Accesser()) << endl;
     } else {
         cerr << "Error: Tree was not constructed!" << endl;
     }

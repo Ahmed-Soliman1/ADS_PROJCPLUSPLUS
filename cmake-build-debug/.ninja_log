@@ -1,0 +1,6 @@
+# ninja log v6
+6	624	7547825679967448	CMakeFiles/Code_lib_run.dir/main.cpp.obj	6876b89c46c3a87d
+27	1006	7547826201073767	CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj	1ebc1cdd9854e632
+22	1007	7547826201023913	Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.obj	b591ee4a197d29e5
+1007	1126	7547826210877526	Code_lib/libCode_lib.a	72fae64b7410642
+1126	1290	7547826212074367	Code_lib_run.exe	29400b008cd295c6
