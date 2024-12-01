@@ -9,6 +9,6 @@ Call Stack (most recent call first):
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) 
--- Configuring done (0.5s)
--- Generating done (0.0s)
+-- Configuring done (1.3s)
+-- Generating done (0.3s)
 -- Build files have been written to: D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/cmake-build-debug

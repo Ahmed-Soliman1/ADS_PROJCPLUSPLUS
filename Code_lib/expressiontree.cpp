@@ -97,8 +97,7 @@ double ExpressionTree::evaluateExpression()
 void ExpressionTree::buildfromPostfix(const string &postfix) // Saif Sabry
 {
     if (postfix.empty()) {
-        root = nullptr;
-        return;
+        throw std::invalid_argument("Error: Postfix expression is empty!");
     }
 
     stack<TreeNode*> s;
@@ -144,7 +143,7 @@ void ExpressionTree::buildfromPostfix(const string &postfix) // Saif Sabry
 void ExpressionTree::buildfromPrefix(const string & prefix) // Ahmed Amgad
 {
     if (prefix.empty()) {
-        throw invalid_argument("Prefix expression is empty!");
+        throw std::invalid_argument("Error: Prefix expression is empty!");
     }
 
     stack<TreeNode*> s;
@@ -185,7 +184,7 @@ void ExpressionTree::buildfromPrefix(const string & prefix) // Ahmed Amgad
     }
 
     if (s.size() != 1) {
-        throw std::invalid_argument("Invalid prefix expression: too many operands!");
+        throw std::invalid_argument("Invalid prefix expression: not enough operands for operator!");
     }
 
     root = s.top();
@@ -193,12 +192,12 @@ void ExpressionTree::buildfromPrefix(const string & prefix) // Ahmed Amgad
 
 void ExpressionTree::buildfromInfix(const string &infix) {// Yousef Elmenshawy
     if (infix.empty()) {
-        cerr << "Error: Infix expression is empty!" << endl;
-        return;
+        throw std::invalid_argument("Error: Infix expression is empty!");
     }
 
     stack<TreeNode*> nodeStack;       // Stack for operands/subtrees
     stack<char> operatorStack;        // Stack for operators
+    //stack<char> parantheseStack;
 
     // Process the infix expression character by character
     int i = 0;
@@ -217,9 +216,16 @@ void ExpressionTree::buildfromInfix(const string &infix) {// Yousef Elmenshawy
         }
         else if (infix[i] == '(') {
             operatorStack.push(infix[i]);
+            //parantheseStack.push(infix[i]);
             i++;
         }
         else if (infix[i] == ')') {
+            // if ((!parantheseStack.empty()) &&
+            //     ((parantheseStack.top() == '(' && infix[i] == ')'))) {
+            //     parantheseStack.pop();
+            // } else {
+            //     throw std::invalid_argument("Invalid infix expression: unbalanced parantheses!");
+            // }
             while (!operatorStack.empty() && operatorStack.top() != '(') {
                 processOperator(nodeStack, operatorStack);
             }
@@ -257,20 +263,23 @@ string ExpressionTree::ToInfix(TreeNode *Root)
         return InfixExp;  // Base case: If the node is null, return
     }
 
-    InfixExp+= ToPostfix(Root->left); //Traverse left
+    // Traverse the left subtree
+    InfixExp += ToInfix(Root->left);
 
-    InfixExp+= Root->value; // visit the node
-    InfixExp+=" ";
-    InfixExp+=ToPostfix(Root->right); //Traverse right
+    // Add the current node's value (operator)
+    InfixExp += Root->value;
+    InfixExp += " ";  // Space after the value for separation
 
+    // Traverse the right subtree
+    InfixExp += ToInfix(Root->right);
 
     return InfixExp;
-
 }
+
 
 void ExpressionTree::processOperator(stack<TreeNode*>& nodeStack, stack<char>& operatorStack) {// Helper function to avoid reptetion in Build from Infix code
     if (nodeStack.size() < 2) {
-        cerr << "Error: Insufficient operands for operator!" << endl;
+        throw std::invalid_argument ("Error: Insufficient operands for operator!");
         return;
     }
 

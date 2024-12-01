@@ -262,29 +262,8 @@ build Code_lib/install/strip: phony Code_lib/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_Google_Tests_run: phony || cmake_object_order_depends_target_Code_lib cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build Google_tests/CMakeFiles/Google_Tests_run.dir/TestMinHeap.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug D$:/Ahmed/Applied$ Data$ Structures/Assignment$ 2/ADS_PROJCPLUSPLUS/Google_tests/TestMinHeap.cpp || cmake_object_order_depends_target_Google_Tests_run
-  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\TestMinHeap.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Code_lib" -isystem "D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include" -isystem "D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest"
-  OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
-  OBJECT_FILE_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
-
-build Google_tests/CMakeFiles/Google_Tests_run.dir/TestMaxHeap.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug D$:/Ahmed/Applied$ Data$ Structures/Assignment$ 2/ADS_PROJCPLUSPLUS/Google_tests/TestMaxHeap.cpp || cmake_object_order_depends_target_Google_Tests_run
-  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\TestMaxHeap.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Code_lib" -isystem "D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include" -isystem "D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest"
-  OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
-  OBJECT_FILE_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
-
-build Google_tests/CMakeFiles/Google_Tests_run.dir/TestExchangeRateAnalyzer.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug D$:/Ahmed/Applied$ Data$ Structures/Assignment$ 2/ADS_PROJCPLUSPLUS/Google_tests/TestExchangeRateAnalyzer.cpp || cmake_object_order_depends_target_Google_Tests_run
-  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\TestExchangeRateAnalyzer.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Code_lib" -isystem "D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include" -isystem "D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest"
-  OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
-  OBJECT_FILE_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
-
-build Google_tests/CMakeFiles/Google_Tests_run.dir/TestMaxSubarrayAnalyzer.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug D$:/Ahmed/Applied$ Data$ Structures/Assignment$ 2/ADS_PROJCPLUSPLUS/Google_tests/TestMaxSubarrayAnalyzer.cpp || cmake_object_order_depends_target_Google_Tests_run
-  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\TestMaxSubarrayAnalyzer.cpp.obj.d
+build Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: CXX_COMPILER__Google_Tests_run_unscanned_Debug D$:/Ahmed/Applied$ Data$ Structures/Assignment$ 2/ADS_PROJCPLUSPLUS/Google_tests/TestExpressionTree.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = Google_tests\CMakeFiles\Google_Tests_run.dir\TestExpressionTree.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -I"D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Code_lib" -isystem "D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include" -isystem "D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest"
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
@@ -298,7 +277,7 @@ build Google_tests/CMakeFiles/Google_Tests_run.dir/TestMaxSubarrayAnalyzer.cpp.o
 #############################################
 # Link the executable Google_tests\Google_Tests_run.exe
 
-build Google_tests/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/TestMinHeap.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/TestMaxHeap.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/TestExchangeRateAnalyzer.cpp.obj Google_tests/CMakeFiles/Google_Tests_run.dir/TestMaxSubarrayAnalyzer.cpp.obj | Code_lib/libCode_lib.a lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a || Code_lib/libCode_lib.a lib/libgtest_maind.a lib/libgtestd.a
+build Google_tests/Google_Tests_run.exe: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj | Code_lib/libCode_lib.a lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a || Code_lib/libCode_lib.a lib/libgtest_maind.a lib/libgtestd.a
   FLAGS = -g
   LINK_LIBRARIES = Code_lib/libCode_lib.a  lib/libgtestd.a  lib/libgtest_maind.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Google_tests\CMakeFiles\Google_Tests_run.dir
