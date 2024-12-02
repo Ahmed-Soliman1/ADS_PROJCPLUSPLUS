@@ -8,6 +8,32 @@ using namespace std;
 ExpressionTree::ExpressionTree():root(nullptr) {
 
 }
+ExpressionTree& ExpressionTree::operator=(const ExpressionTree& other) {
+    if (this == &other) {
+        return *this;
+    }
+    reset();
+    if (other.root != nullptr) {
+        root = copyTree(other.root);
+    }
+    return *this;
+}
+ExpressionTree::ExpressionTree(const ExpressionTree& other) : root(nullptr) {
+    if (other.root != nullptr) {
+        root = copyTree(other.root);
+    }
+}
+TreeNode* ExpressionTree::copyTree(TreeNode* node) {
+    if (node == nullptr) {
+        return nullptr;
+    }
+    TreeNode* newNode = new TreeNode(node->value);
+    newNode->left = copyTree(node->left);
+    newNode->right = copyTree(node->right);
+
+    return newNode;
+}
+
 
 void ExpressionTree::clearTree(TreeNode *node) {
     if (node == nullptr) return;

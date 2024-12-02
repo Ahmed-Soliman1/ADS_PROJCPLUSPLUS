@@ -24,3 +24,7 @@
 34	642	7548097290548775	Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.obj	90e8c80867e59bc5
 643	725	7548097296632507	Code_lib/libCode_lib.a	9facaca720b5ecce
 725	3775	7548097297460282	Google_tests/Google_Tests_run.exe	c7b22967f209f269
+29	1518	7548785199038416	Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj	82e707476715dfd6
+38	709	7548785762776913	Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.obj	b591ee4a197d29e5
+709	816	7548785769491316	Code_lib/libCode_lib.a	9facaca720b5ecce
+816	3578	7548785770558456	Google_tests/Google_Tests_run.exe	c7b22967f209f269

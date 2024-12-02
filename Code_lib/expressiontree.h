@@ -15,11 +15,13 @@ private:
     double applyOperation(double a, double b, char op);
     int precedence(char op);
     void processOperator(Stackt<TreeNode*>& nodeStack, Stackt<char>& operatorStack);
+    TreeNode* copyTree(TreeNode* node);
 
 public:
     ExpressionTree();
     void clearTree(TreeNode* node);
-
+    ExpressionTree(const ExpressionTree& other);
+    ExpressionTree& operator=(const ExpressionTree& other);
     void reset();
 
     ~ExpressionTree();
