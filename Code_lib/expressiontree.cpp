@@ -104,10 +104,10 @@ double ExpressionTree::evaluateExpression()
     string token;
     while (ss >> token) {
 
-        if(isdigit(token[0])) {
+        if(isdigit(token[0]) || (token[0] == '-' && token.length() > 1 && isdigit(token[1]))) {
             Store.push(stod(token));
         }
-        else if(isOperator(token[0])) {
+        else{
 
             double a2 = Store.peek(); Store.pop();
             double a1=Store.peek(); Store.pop();
