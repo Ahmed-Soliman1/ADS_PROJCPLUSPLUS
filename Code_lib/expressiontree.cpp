@@ -330,7 +330,7 @@ string ExpressionTree::ToPrefix(TreeNode* Root) //Koussay Jaballah
     return PrefixExp;
 }
 
-ExpressionTree::TreeNode *ExpressionTree::Root_Accesser()
+TreeNode* ExpressionTree::Root_Accesser()
 {
     return root;
 }

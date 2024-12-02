@@ -2,19 +2,13 @@
 #define EXPRESSIONTREE_H
 #include<string>
 #include<stack>
-
+#include "TreeNode.h"
 using namespace std;
 
 class ExpressionTree
 {
 private:
 
-    struct TreeNode {
-        string value;
-        TreeNode* left;
-        TreeNode* right;
-        TreeNode( string val) : value(val), left(nullptr), right(nullptr) {}
-    };
     TreeNode* root;
 
     //Helper Functions to be included in the Conversions
