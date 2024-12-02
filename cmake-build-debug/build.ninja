@@ -167,6 +167,13 @@ build Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.obj: CXX_COMPILER__Cod
   OBJECT_DIR = Code_lib\CMakeFiles\Code_lib.dir
   OBJECT_FILE_DIR = Code_lib\CMakeFiles\Code_lib.dir
 
+build Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.obj: CXX_COMPILER__Code_lib_unscanned_Debug D$:/Ahmed/Applied$ Data$ Structures/Assignment$ 2/ADS_PROJCPLUSPLUS/Code_lib/Stackt.cpp || cmake_object_order_depends_target_Code_lib
+  DEP_FILE = Code_lib\CMakeFiles\Code_lib.dir\Stackt.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I"D:/Ahmed/Applied Data Structures/Assignment 2/ADS_PROJCPLUSPLUS/Code_lib"
+  OBJECT_DIR = Code_lib\CMakeFiles\Code_lib.dir
+  OBJECT_FILE_DIR = Code_lib\CMakeFiles\Code_lib.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target Code_lib
@@ -175,7 +182,7 @@ build Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.obj: CXX_COMPILER__Cod
 #############################################
 # Link the static library Code_lib\libCode_lib.a
 
-build Code_lib/libCode_lib.a: CXX_STATIC_LIBRARY_LINKER__Code_lib_Debug Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.obj
+build Code_lib/libCode_lib.a: CXX_STATIC_LIBRARY_LINKER__Code_lib_Debug Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.obj Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Code_lib\CMakeFiles\Code_lib.dir
   POST_BUILD = cd .

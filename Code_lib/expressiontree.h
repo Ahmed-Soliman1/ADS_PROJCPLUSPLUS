@@ -1,22 +1,20 @@
 #ifndef EXPRESSIONTREE_H
 #define EXPRESSIONTREE_H
 #include<string>
-#include<stack>
+#include "Stackt.h"
 #include "TreeNode.h"
 using namespace std;
 
 class ExpressionTree
 {
 private:
-
     TreeNode* root;
-
     //Helper Functions to be included in the Conversions
     bool isOperator(char ch);
     bool isOperator(string s);
     double applyOperation(double a, double b, char op);
     int precedence(char op);
-    void processOperator(stack<TreeNode*>& nodeStack, stack<char>& operatorStack);
+    void processOperator(Stackt<TreeNode*>& nodeStack, Stackt<char>& operatorStack);
 
 public:
     ExpressionTree();

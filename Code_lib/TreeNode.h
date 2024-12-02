@@ -11,5 +11,6 @@ public:
 
     // Constructor for TreeNode
     TreeNode(string val) : value(val), left(nullptr), right(nullptr) {}
+    TreeNode() : value(""), left(nullptr), right(nullptr) {}
 };
 #endif //TREENODE_H

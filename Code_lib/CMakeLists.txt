@@ -7,6 +7,8 @@ set(HEADER_FILES
 set(SOURCE_FILES
         expressiontree.cpp
         TreeNode.h
+        Stackt.cpp
+        Stackt.h
 )
 
 add_library(Code_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
