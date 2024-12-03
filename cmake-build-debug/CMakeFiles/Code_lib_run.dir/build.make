@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = H:\ADS2\ADS_PROJCPLUSPLUS
+CMAKE_SOURCE_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Code_lib_run.dir/depend.make
@@ -70,33 +70,33 @@ include CMakeFiles/Code_lib_run.dir/flags.make
 
 CMakeFiles/Code_lib_run.dir/main.cpp.obj: CMakeFiles/Code_lib_run.dir/flags.make
 CMakeFiles/Code_lib_run.dir/main.cpp.obj: CMakeFiles/Code_lib_run.dir/includes_CXX.rsp
-CMakeFiles/Code_lib_run.dir/main.cpp.obj: H:/ADS2/ADS_PROJCPLUSPLUS/main.cpp
+CMakeFiles/Code_lib_run.dir/main.cpp.obj: D:/Ahmed/Applied\ Data\ Structures/Assignment\ 2/Second_Clone/ADS_PROJCPLUSPLUS/main.cpp
 CMakeFiles/Code_lib_run.dir/main.cpp.obj: CMakeFiles/Code_lib_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Code_lib_run.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Code_lib_run.dir/main.cpp.obj -MF CMakeFiles\Code_lib_run.dir\main.cpp.obj.d -o CMakeFiles\Code_lib_run.dir\main.cpp.obj -c H:\ADS2\ADS_PROJCPLUSPLUS\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Code_lib_run.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Code_lib_run.dir/main.cpp.obj -MF CMakeFiles\Code_lib_run.dir\main.cpp.obj.d -o CMakeFiles\Code_lib_run.dir\main.cpp.obj -c "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\main.cpp"
 
 CMakeFiles/Code_lib_run.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Code_lib_run.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\ADS2\ADS_PROJCPLUSPLUS\main.cpp > CMakeFiles\Code_lib_run.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\main.cpp" > CMakeFiles\Code_lib_run.dir\main.cpp.i
 
 CMakeFiles/Code_lib_run.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Code_lib_run.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\ADS2\ADS_PROJCPLUSPLUS\main.cpp -o CMakeFiles\Code_lib_run.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\main.cpp" -o CMakeFiles\Code_lib_run.dir\main.cpp.s
 
 CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj: CMakeFiles/Code_lib_run.dir/flags.make
 CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj: CMakeFiles/Code_lib_run.dir/includes_CXX.rsp
-CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj: H:/ADS2/ADS_PROJCPLUSPLUS/Code_lib/expressiontree.cpp
+CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj: D:/Ahmed/Applied\ Data\ Structures/Assignment\ 2/Second_Clone/ADS_PROJCPLUSPLUS/Code_lib/expressiontree.cpp
 CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj: CMakeFiles/Code_lib_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj -MF CMakeFiles\Code_lib_run.dir\Code_lib\expressiontree.cpp.obj.d -o CMakeFiles\Code_lib_run.dir\Code_lib\expressiontree.cpp.obj -c H:\ADS2\ADS_PROJCPLUSPLUS\Code_lib\expressiontree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.obj -MF CMakeFiles\Code_lib_run.dir\Code_lib\expressiontree.cpp.obj.d -o CMakeFiles\Code_lib_run.dir\Code_lib\expressiontree.cpp.obj -c "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\Code_lib\expressiontree.cpp"
 
 CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\ADS2\ADS_PROJCPLUSPLUS\Code_lib\expressiontree.cpp > CMakeFiles\Code_lib_run.dir\Code_lib\expressiontree.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\Code_lib\expressiontree.cpp" > CMakeFiles\Code_lib_run.dir\Code_lib\expressiontree.cpp.i
 
 CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Code_lib_run.dir/Code_lib/expressiontree.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\ADS2\ADS_PROJCPLUSPLUS\Code_lib\expressiontree.cpp -o CMakeFiles\Code_lib_run.dir\Code_lib\expressiontree.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\Code_lib\expressiontree.cpp" -o CMakeFiles\Code_lib_run.dir\Code_lib\expressiontree.cpp.s
 
 # Object files for target Code_lib_run
 Code_lib_run_OBJECTS = \
@@ -113,7 +113,7 @@ Code_lib_run.exe: Code_lib/libCode_lib.a
 Code_lib_run.exe: CMakeFiles/Code_lib_run.dir/linkLibs.rsp
 Code_lib_run.exe: CMakeFiles/Code_lib_run.dir/objects1.rsp
 Code_lib_run.exe: CMakeFiles/Code_lib_run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Code_lib_run.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Code_lib_run.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Code_lib_run.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +125,6 @@ CMakeFiles/Code_lib_run.dir/clean:
 .PHONY : CMakeFiles/Code_lib_run.dir/clean
 
 CMakeFiles/Code_lib_run.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" H:\ADS2\ADS_PROJCPLUSPLUS H:\ADS2\ADS_PROJCPLUSPLUS H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles\Code_lib_run.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles\Code_lib_run.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/Code_lib_run.dir/depend
 

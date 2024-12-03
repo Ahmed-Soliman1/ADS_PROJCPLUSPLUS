@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = H:\ADS2\ADS_PROJCPLUSPLUS
+CMAKE_SOURCE_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

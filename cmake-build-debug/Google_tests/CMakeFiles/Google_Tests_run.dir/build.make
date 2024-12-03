@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = H:\ADS2\ADS_PROJCPLUSPLUS
+CMAKE_SOURCE_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include Google_tests/CMakeFiles/Google_Tests_run.dir/depend.make
@@ -70,18 +70,18 @@ include Google_tests/CMakeFiles/Google_Tests_run.dir/flags.make
 
 Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: Google_tests/CMakeFiles/Google_Tests_run.dir/flags.make
 Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: Google_tests/CMakeFiles/Google_Tests_run.dir/includes_CXX.rsp
-Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/TestExpressionTree.cpp
+Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: D:/Ahmed/Applied\ Data\ Structures/Assignment\ 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/TestExpressionTree.cpp
 Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: Google_tests/CMakeFiles/Google_Tests_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj"
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj -MF CMakeFiles\Google_Tests_run.dir\TestExpressionTree.cpp.obj.d -o CMakeFiles\Google_Tests_run.dir\TestExpressionTree.cpp.obj -c H:\ADS2\ADS_PROJCPLUSPLUS\Google_tests\TestExpressionTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj"
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests" && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj -MF CMakeFiles\Google_Tests_run.dir\TestExpressionTree.cpp.obj.d -o CMakeFiles\Google_Tests_run.dir\TestExpressionTree.cpp.obj -c "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\Google_tests\TestExpressionTree.cpp"
 
 Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.i"
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E H:\ADS2\ADS_PROJCPLUSPLUS\Google_tests\TestExpressionTree.cpp > CMakeFiles\Google_Tests_run.dir\TestExpressionTree.cpp.i
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests" && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\Google_tests\TestExpressionTree.cpp" > CMakeFiles\Google_Tests_run.dir\TestExpressionTree.cpp.i
 
 Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.s"
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S H:\ADS2\ADS_PROJCPLUSPLUS\Google_tests\TestExpressionTree.cpp -o CMakeFiles\Google_Tests_run.dir\TestExpressionTree.cpp.s
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests" && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\Google_tests\TestExpressionTree.cpp" -o CMakeFiles\Google_Tests_run.dir\TestExpressionTree.cpp.s
 
 # Object files for target Google_Tests_run
 Google_Tests_run_OBJECTS = \
@@ -99,18 +99,18 @@ Google_tests/Google_Tests_run.exe: lib/libgtestd.a
 Google_tests/Google_Tests_run.exe: Google_tests/CMakeFiles/Google_Tests_run.dir/linkLibs.rsp
 Google_tests/Google_Tests_run.exe: Google_tests/CMakeFiles/Google_Tests_run.dir/objects1.rsp
 Google_tests/Google_Tests_run.exe: Google_tests/CMakeFiles/Google_Tests_run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Google_Tests_run.exe"
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Google_Tests_run.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Google_Tests_run.exe"
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Google_Tests_run.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Google_tests/CMakeFiles/Google_Tests_run.dir/build: Google_tests/Google_Tests_run.exe
 .PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/build
 
 Google_tests/CMakeFiles/Google_Tests_run.dir/clean:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests && $(CMAKE_COMMAND) -P CMakeFiles\Google_Tests_run.dir\cmake_clean.cmake
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests" && $(CMAKE_COMMAND) -P CMakeFiles\Google_Tests_run.dir\cmake_clean.cmake
 .PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/clean
 
 Google_tests/CMakeFiles/Google_Tests_run.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" H:\ADS2\ADS_PROJCPLUSPLUS H:\ADS2\ADS_PROJCPLUSPLUS\Google_tests H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests\CMakeFiles\Google_Tests_run.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\Google_tests" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests\CMakeFiles\Google_Tests_run.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/depend
 

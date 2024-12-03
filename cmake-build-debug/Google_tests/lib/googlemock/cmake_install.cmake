@@ -1,4 +1,4 @@
-# Install script for directory: H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock
+# Install script for directory: D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,26 +39,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest/cmake_install.cmake")
+  include("D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock/include/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/lib/libgmockd.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/lib/libgmockd.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/lib/libgmock_maind.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/lib/libgmock_maind.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest/generated/gmock.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest/generated/gmock.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest/generated/gmock_main.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest/generated/gmock_main.pc")
 endif()
 

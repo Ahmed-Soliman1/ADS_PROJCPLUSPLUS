@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = H:\ADS2\ADS_PROJCPLUSPLUS
+CMAKE_SOURCE_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,14 +131,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\Code_lib\\CMakeFiles\progress.marks
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles 0
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\Code_lib\\CMakeFiles\progress.marks"
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/clean
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,22 +147,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/preinstall
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/preinstall
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Code_lib/CMakeFiles/Code_lib.dir/rule:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/CMakeFiles/Code_lib.dir/rule
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Code_lib/CMakeFiles/Code_lib.dir/rule
 .PHONY : Code_lib/CMakeFiles/Code_lib.dir/rule
 
 # Convenience name for target.
@@ -171,7 +171,7 @@ Code_lib: Code_lib/CMakeFiles/Code_lib.dir/rule
 
 # fast build rule for target.
 Code_lib/fast:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/build
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/build
 .PHONY : Code_lib/fast
 
 Stackt.obj: Stackt.cpp.obj
@@ -179,7 +179,7 @@ Stackt.obj: Stackt.cpp.obj
 
 # target to build an object file
 Stackt.cpp.obj:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.obj
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.obj
 .PHONY : Stackt.cpp.obj
 
 Stackt.i: Stackt.cpp.i
@@ -187,7 +187,7 @@ Stackt.i: Stackt.cpp.i
 
 # target to preprocess a source file
 Stackt.cpp.i:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.i
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.i
 .PHONY : Stackt.cpp.i
 
 Stackt.s: Stackt.cpp.s
@@ -195,7 +195,7 @@ Stackt.s: Stackt.cpp.s
 
 # target to generate assembly for a file
 Stackt.cpp.s:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.s
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.s
 .PHONY : Stackt.cpp.s
 
 expressiontree.obj: expressiontree.cpp.obj
@@ -203,7 +203,7 @@ expressiontree.obj: expressiontree.cpp.obj
 
 # target to build an object file
 expressiontree.cpp.obj:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.obj
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.obj
 .PHONY : expressiontree.cpp.obj
 
 expressiontree.i: expressiontree.cpp.i
@@ -211,7 +211,7 @@ expressiontree.i: expressiontree.cpp.i
 
 # target to preprocess a source file
 expressiontree.cpp.i:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.i
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.i
 .PHONY : expressiontree.cpp.i
 
 expressiontree.s: expressiontree.cpp.s
@@ -219,7 +219,7 @@ expressiontree.s: expressiontree.cpp.s
 
 # target to generate assembly for a file
 expressiontree.cpp.s:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.s
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Code_lib\CMakeFiles\Code_lib.dir\build.make Code_lib/CMakeFiles/Code_lib.dir/expressiontree.cpp.s
 .PHONY : expressiontree.cpp.s
 
 # Help Target
@@ -252,6 +252,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d H:\ADS2\ADS_PROJCPLUSPLUS\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Second_Clone\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
