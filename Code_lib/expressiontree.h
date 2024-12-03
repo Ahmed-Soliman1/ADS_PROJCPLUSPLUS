@@ -23,7 +23,6 @@ public:
     ExpressionTree(const ExpressionTree& other);
     ExpressionTree& operator=(const ExpressionTree& other);
     void reset();
-
     ~ExpressionTree();
     double evaluateExpression();
     void buildfromPostfix(const string & postfix); // building expression tree from postfix expression
@@ -33,6 +32,7 @@ public:
     string ToPostfix(TreeNode* Root);
     string ToPrefix(TreeNode* Root);
     TreeNode * Root_Accesser ();// helper function for the main
+    void displayConversionMenu(ExpressionTree& tree);
 
 
 };

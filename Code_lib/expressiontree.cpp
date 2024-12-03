@@ -233,7 +233,6 @@ void ExpressionTree::buildfromInfix(const std::string& infix) {
 
     Stackt<TreeNode*> nodeStack(infix.size());       // Stack for operands/subtrees
     Stackt<char> operatorStack(infix.size());        // Stack for operators
-    int openParentheses = 0;         // To track parentheses balance
     // Process the infix expression character by character
     int i = 0;
     while (i < infix.size()) {
@@ -372,4 +371,63 @@ string ExpressionTree::ToPrefix(TreeNode* Root) //Koussay Jaballah
 TreeNode* ExpressionTree::Root_Accesser()
 {
     return root;
+}
+void ExpressionTree::displayConversionMenu(ExpressionTree& tree) {
+    string input;
+    int choice;
+    cout << "Welcome to our Tree of expressions!";
+    while (true) {
+        cout << "\nExpression Conversion Menu:\n";
+        cout << "1. Infix to Postfix\n";
+        cout << "2. Infix to Prefix\n";
+        cout << "3. Postfix to Infix\n";
+        cout << "4. Postfix to Prefix\n";
+        cout << "5. Prefix to Infix\n";
+        cout << "6. Prefix to Postfix\n";
+        cout << "7. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 7) {
+            cout << "Exiting the menu. Goodbye!\n";
+            break;
+        }
+
+        cout << "Enter the expression: ";
+        cin.ignore(); // Clear newline from the input buffer
+        getline(cin, input);
+
+        try {
+            switch (choice) {
+                case 1: // Infix to Postfix
+                    tree.buildfromInfix(input);
+                cout << "Postfix Expression: " << tree.ToPostfix(tree.Root_Accesser()) << "\n";
+                break;
+                case 2: // Infix to Prefix
+                    tree.buildfromInfix(input);
+                cout << "Prefix Expression: " << tree.ToPrefix(tree.Root_Accesser()) << "\n";
+                break;
+                case 3: // Postfix to Infix
+                    tree.buildfromPostfix(input);
+                cout << "Infix Expression: " << tree.ToInfix(tree.Root_Accesser()) << "\n";
+                break;
+                case 4: // Postfix to Prefix
+                    tree.buildfromPostfix(input);
+                cout << "Prefix Expression: " << tree.ToPrefix(tree.Root_Accesser()) << "\n";
+                break;
+                case 5: // Prefix to Infix
+                    tree.buildfromPrefix(input);
+                cout << "Infix Expression: " << tree.ToInfix(tree.Root_Accesser()) << "\n";
+                break;
+                case 6: // Prefix to Postfix
+                    tree.buildfromPrefix(input);
+                cout << "Postfix Expression: " << tree.ToPostfix(tree.Root_Accesser()) << "\n";
+                break;
+                default:
+                    cout << "Invalid choice! Please try again.\n";
+            }
+        } catch (const std::exception& e) {
+            cout << e.what() << "\n";
+        }
+    }
 }
