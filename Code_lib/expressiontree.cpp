@@ -251,9 +251,9 @@ void ExpressionTree::buildfromInfix( string& infix) {
         }
 
 
-        if (isdigit(infix[i])) {// Handling Multidigit
+        if (isdigit(infix[i])||isalpha(infix[i])) {// Handling Multidigit
             string numStr;
-            while (i < infix.size() && isdigit(infix[i])) {
+            while (i < infix.size() && (isdigit(infix[i])||isalpha(infix[i]))) {
                 numStr += infix[i++];
             }
             nodeStack.push(new TreeNode(numStr));  // Push operand as a tree node

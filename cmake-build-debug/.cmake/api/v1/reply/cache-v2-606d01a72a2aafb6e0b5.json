@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug"
 		},
 		{
 			"name" : "ADS_PROJCPLUSPLUS_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS"
 		},
 		{
 			"name" : "BUILD_GMOCK",
@@ -103,7 +103,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug"
+			"value" : "h:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -607,7 +607,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1631,7 +1631,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/Code_lib"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Code_lib"
 		},
 		{
 			"name" : "Code_lib_IS_TOP_LEVEL",
@@ -1655,7 +1655,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Code_lib"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/Code_lib"
 		},
 		{
 			"name" : "Google_tests_BINARY_DIR",
@@ -1667,7 +1667,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests"
 		},
 		{
 			"name" : "Google_tests_IS_TOP_LEVEL",
@@ -1691,7 +1691,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests"
 		},
 		{
 			"name" : "INSTALL_GTEST",
@@ -1755,7 +1755,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest/generated"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest/generated"
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -1767,7 +1767,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googlemock"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googlemock"
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -1791,7 +1791,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock"
 		},
 		{
 			"name" : "gmock_build_tests",
@@ -1819,7 +1819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib"
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -1843,7 +1843,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/lib"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib"
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -1855,7 +1855,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1879,7 +1879,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest"
+			"value" : "H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",

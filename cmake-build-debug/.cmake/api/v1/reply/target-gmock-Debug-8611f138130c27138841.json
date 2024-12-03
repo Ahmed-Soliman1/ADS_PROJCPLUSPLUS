@@ -106,25 +106,25 @@
 			[
 				{
 					"backtrace" : 8,
-					"path" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Code_lib"
+					"path" : "H:/ADS2/ADS_PROJCPLUSPLUS/Code_lib"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock/include"
+					"path" : "H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock/include"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock"
-				},
-				{
-					"backtrace" : 9,
-					"isSystem" : true,
-					"path" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include"
+					"path" : "H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googlemock"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "D:/Ahmed/Applied Data Structures/Assignment 2/Second_Clone/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest"
+					"path" : "H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest"
 				}
 			],
 			"language" : "CXX",
