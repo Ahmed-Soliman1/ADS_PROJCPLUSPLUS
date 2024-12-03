@@ -126,44 +126,50 @@ void ExpressionTree::buildfromPostfix(const string &postfix) // Saif Sabry
         throw std::invalid_argument("Error: Postfix expression is empty!");
     }
 
-    Stackt<TreeNode*> s(postfix.size());
-    string multi_digit;
+    Stackt<TreeNode*> s(postfix.size());  // Use std::stack instead of custom Stackt
+    vector<string> tokens;
+    string currentToken;
+
+    // Tokenize the postfix expression
     for (char ch : postfix) {
-  if (isdigit(ch)) {
-      multi_digit += ch;
-  }
-  else {
-      if (!multi_digit.empty()) {
-          s.push(new TreeNode(multi_digit));
-          multi_digit.clear();
-      }
-
-      if (isOperator(ch)) {
-          if (s.size() < 2) {
-              throw std::invalid_argument("Invalid postfix expression: not enough operands for operator!");
-          }
-          TreeNode* rightChild = s.peek();
-          s.pop();
-          TreeNode* leftChild = s.peek();
-          s.pop();
-
-          TreeNode* newNode = new TreeNode(string(1, ch));
-          newNode->left = leftChild;
-          newNode->right = rightChild;
-          s.push(newNode);
-      }
-      else if (ch!=' ') {
-          throw std::invalid_argument("Invalid character in postfix expression!");
-      }
-  }
+        if (ch == ' ') {
+            if (!currentToken.empty()) {
+                tokens.push_back(currentToken);
+                currentToken.clear();
+            }
+        } else {
+            currentToken += ch;
+        }
     }
-    if (!multi_digit.empty()) {
-        s.push(new TreeNode(multi_digit));
+    if (!currentToken.empty()) {
+        tokens.push_back(currentToken);
     }
+
+    // Iterate over the tokens
+    for (int i = 0; i < tokens.size(); i++) {  // Fixed the loop condition to i < tokens.size()
+        string token = tokens[i];
+        if (isOperator(token)) {  // Check if the token is an operator
+            if (s.size() < 2) {
+                throw std::invalid_argument("Invalid postfix expression: not enough operands for operator!");
+            }
+            TreeNode* rightChild = s.peek();
+            s.pop();
+            TreeNode* leftChild = s.peek();
+            s.pop();
+
+            TreeNode* newNode = new TreeNode(token);
+            newNode->left = leftChild;
+            newNode->right = rightChild;
+            s.push(newNode);
+        } else {  // Operand (number or variable)
+            s.push(new TreeNode(token));
+        }
+    }
+
     if (s.size() != 1) {
         throw std::invalid_argument("Invalid postfix expression: too many operands!");
     }
-    root = s.peek();
+    root = s.peek();  // Assign the root to the single remaining node in the stack
     s.pop();
 }
 void ExpressionTree::buildfromPrefix(const string & prefix) // Ahmed Amgad

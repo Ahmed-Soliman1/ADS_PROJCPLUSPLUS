@@ -20,7 +20,7 @@ protected:
 // Test for building and evaluating from Postfix notation
 TEST_F(ExpressionTreeTest, BuildFromPostfixAndEvaluate) {
     cout << "Running test for postfix expression..." << endl;
-    string postfix = "* + -35 45 -5";
+    string postfix = "-35 45 + -5 *";
 
     tree.buildfromPostfix(postfix);
     cout<<tree.ToInfix(tree.Root_Accesser())<<"----";
@@ -56,7 +56,7 @@ TEST_F(ExpressionTreeTest, BuildFromPrefixAndEvaluate) {
 // Test for building and evaluating from Infix notation
 TEST_F(ExpressionTreeTest, BuildFromInfixAndEvaluate) {
     cout << "Running test for infix expression..." << endl;
-    string infix = "(-35 + 45) * -5";
+    string infix = "-35 + 45 * -5";
     tree.buildfromInfix(infix);
     double result = tree.evaluateExpression();  // Expected result: 35.0
 
