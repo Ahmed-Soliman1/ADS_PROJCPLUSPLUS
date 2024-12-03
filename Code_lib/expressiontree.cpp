@@ -224,13 +224,22 @@ void ExpressionTree::buildfromPrefix(const string & prefix) // Ahmed Amgad
 
     root = s.peek();
 }
-
-void ExpressionTree::buildfromInfix(const std::string& infix) {
+string ExpressionTree::removeSpaces(const std::string& str) {
+    string result;
+    for (char ch : str) {
+        if (!isspace(ch)) {
+            result += ch;
+        }
+    }
+    return result;
+}
+void ExpressionTree::buildfromInfix( string& infix) {
     // Yousef Elmenshawy
     if (infix.empty()) {
         throw std::invalid_argument( "Error: Infix expression is empty!");
     }
-
+    // Remove spaces
+    infix=removeSpaces(infix);
     Stackt<TreeNode*> nodeStack(infix.size());       // Stack for operands/subtrees
     Stackt<char> operatorStack(infix.size());        // Stack for operators
     // Process the infix expression character by character
@@ -261,7 +270,7 @@ void ExpressionTree::buildfromInfix(const std::string& infix) {
             i++;
         }
         else if (infix[i] == '-' &&
-                   (i == 0 ||( infix[i - 1] == '(' && i>0) || (isOperator(infix[i - 1]) && i>0 )|| (infix[i-1]==' ' && i>0))) {
+                   (i == 0 ||( infix[i - 1] == '(' && i>0) || (isOperator(infix[i - 1]) && i>0))) {
             // Unary minus case: Start a negative number
             i++; // Skip the '-'
             string numStr = "-";
@@ -427,7 +436,7 @@ void ExpressionTree::displayConversionMenu(ExpressionTree& tree) {
                     cout << "Invalid choice! Please try again.\n";
             }
         } catch (const std::exception& e) {
-            cout << e.what() << "\n";
+            cout << e.what() << "\n";// just in case if there were any errors inside the switch case but it should be fine
         }
     }
 }

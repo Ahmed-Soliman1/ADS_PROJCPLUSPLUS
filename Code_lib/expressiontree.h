@@ -27,10 +27,11 @@ public:
     double evaluateExpression();
     void buildfromPostfix(const string & postfix); // building expression tree from postfix expression
     void buildfromPrefix(const string & prefix);
-    void buildfromInfix(const string & infix);
+    void buildfromInfix(string & infix);
     string ToInfix(TreeNode* Root);
     string ToPostfix(TreeNode* Root);
     string ToPrefix(TreeNode* Root);
+    string removeSpaces(const std::string& str);
     TreeNode * Root_Accesser ();// helper function for the main
     void displayConversionMenu(ExpressionTree& tree);
 

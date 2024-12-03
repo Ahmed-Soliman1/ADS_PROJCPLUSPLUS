@@ -124,7 +124,9 @@ TEST_F(ExpressionTreeTest, EmptyPrefixExpression) {
 // Test for empty infix expression handling (assuming `buildfromInfix` method exists)
 TEST_F(ExpressionTreeTest, EmptyInfixExpression) {
     try {
-        tree.buildfromInfix("");  // Passing an empty string to the method
+        std::string emptyString = ""; // Create a modifiable std::string variable
+        tree.buildfromInfix(emptyString);  // Passing an empty string to the method
+
         FAIL() << "Expected an exception for empty infix expression!";
     } catch (const std::invalid_argument& e) {
         EXPECT_STREQ("Error: Infix expression is empty!", e.what());  // Assuming you throw this exception
