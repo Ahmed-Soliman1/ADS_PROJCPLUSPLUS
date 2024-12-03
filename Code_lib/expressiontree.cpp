@@ -228,56 +228,55 @@ void ExpressionTree::buildfromPrefix(const string & prefix) // Ahmed Amgad
 void ExpressionTree::buildfromInfix(const std::string& infix) {
     // Yousef Elmenshawy
     if (infix.empty()) {
-        std::cerr << "Error: Infix expression is empty!" << std::endl;
-        return;
+        throw std::invalid_argument( "Error: Infix expression is empty!");
     }
 
-    Stackt<TreeNode*> nodeStack(infix.size() + 15); // Stack for operands/subtrees
-    Stackt<char> operatorStack(infix.size() + 15); // Stack for operators
-
-    size_t i = 0; // Use size_t for indexing to avoid signed-unsigned mismatch
+    Stackt<TreeNode*> nodeStack(infix.size());       // Stack for operands/subtrees
+    Stackt<char> operatorStack(infix.size());        // Stack for operators
+    int openParentheses = 0;         // To track parentheses balance
+    // Process the infix expression character by character
+    int i = 0;
     while (i < infix.size()) {
-        if (std::isspace(infix[i])) {
+        if (isspace(infix[i])) {
             i++; // Skip whitespaces
             continue;
         }
 
-        if (std::isdigit(infix[i])) { // Handling multi-digit numbers
-            std::string numStr;
-            while (i < infix.size() && std::isdigit(infix[i])) {
+
+        if (isdigit(infix[i])) {// Handling Multidigit
+            string numStr;
+            while (i < infix.size() && isdigit(infix[i])) {
                 numStr += infix[i++];
             }
-            nodeStack.push(new TreeNode(numStr)); // Push operand as a tree node
-        } else if (infix[i] == '(') {
+            nodeStack.push(new TreeNode(numStr));  // Push operand as a tree node
+        }
+        else if (infix[i] == '(') {
             operatorStack.push(infix[i]);
             i++;
-        } else if (infix[i] == ')') {
+        }
+        else if (infix[i] == ')') {
             while (!operatorStack.isEmpty() && operatorStack.peek() != '(') {
                 processOperator(nodeStack, operatorStack);
             }
-            if (!operatorStack.isEmpty()) {
-                operatorStack.pop(); // Remove the '('
-            }
+            operatorStack.pop();  // Remove the '('
             i++;
-        } else if (infix[i] == '-' &&
-                   (i == 0 || infix[i - 1] == '(' || isOperator(infix[i - 1] || infix[i-1]==' '))) {
-            // Unary minus case
+        }
+        else if (infix[i] == '-' &&
+                   (i == 0 ||( infix[i - 1] == '(' && i>0) || (isOperator(infix[i - 1]) && i>0 )|| (infix[i-1]==' ' && i>0))) {
+            // Unary minus case: Start a negative number
             i++; // Skip the '-'
-            std::string numStr = "-";
-            while (i < infix.size() && std::isdigit(infix[i])) {
+            string numStr = "-";
+            while (i < infix.size() &&isdigit(infix[i])) {
                 numStr += infix[i++];
             }
-            nodeStack.push(new TreeNode(numStr)); // Push negative operand as a tree node
-        } else if (isOperator(infix[i])) {
-            while (!operatorStack.isEmpty() &&
-                   precedence(operatorStack.peek()) >= precedence(infix[i])) {
+            nodeStack.push(new TreeNode(numStr));  // Push negative operand as a tree node
+        }
+        else if (isOperator(infix[i])) {
+            while (!operatorStack.isEmpty() && precedence(operatorStack.peek()) >= precedence(infix[i])) {
                 processOperator(nodeStack, operatorStack);
             }
-            operatorStack.push(infix[i]); // Push the current operator
+            operatorStack.push(infix[i]);  // Push the current operator
             i++;
-        } else {
-            std::cerr << "Error: Invalid character in infix expression!" << std::endl;
-            return;
         }
     }
 
@@ -291,7 +290,7 @@ void ExpressionTree::buildfromInfix(const std::string& infix) {
         root = nodeStack.peek();
         nodeStack.pop();
     } else {
-        std::cerr << "Error: Failed to build expression tree!" << std::endl;
+        cerr << "Error: Failed to build expression tree!" << endl;
     }
 }
 
@@ -319,8 +318,8 @@ string ExpressionTree::ToInfix(TreeNode *Root)
 
 void ExpressionTree::processOperator(Stackt<TreeNode*>& nodeStack, Stackt<char>& operatorStack) {// Helper function to avoid reptetion in Build from Infix code
     if (nodeStack.size() < 2) {
-        //throw std::invalid_argument ("Error: Insufficient operands for operator!2");
-        return;
+        throw std::invalid_argument ("Error: Insufficient operands for operator!");
+
     }
 
     // Pop operator
