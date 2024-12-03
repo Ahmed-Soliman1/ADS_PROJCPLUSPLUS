@@ -58,20 +58,21 @@ TEST_F(ExpressionTreeTest, BuildFromInfixAndEvaluate) {
     cout << "Running test for infix expression..." << endl;
     string infix = "-35 + 45 * -5";
     tree.buildfromInfix(infix);
+    cout<<tree.ToPostfix(tree.Root_Accesser())<<"----";
     double result = tree.evaluateExpression();  // Expected result: 35.0
-
+    cout<<tree.ToPostfix(tree.Root_Accesser())<<"----";
     cout << "Evaluating Infix expression..." << endl;
-    EXPECT_NEAR(result, -50.0, 1e-6) << "Expected result to be 35.0 from infix evaluation.";
+    EXPECT_NEAR(result, -260.0, 1e-6) << "Expected result to be 35.0 from infix evaluation.";
 
     // Test ToPostfix conversion (should output 3 4 + 5 *)
     string postfix = tree.ToPostfix(tree.Root_Accesser());
-    EXPECT_EQ(postfix, "* + -35 45 -5 ") << "Expected postfix expression to be '3 4 + 5 *'.";
+    EXPECT_EQ(postfix, "-35 45 -5 * + ") << "Expected postfix expression to be '3 4 + 5 *'.";
 }
 
 // Test for invalid expressions
 TEST_F(ExpressionTreeTest, InvalidPostfixExpression) {
     cout << "Running test for invalid postfix expression..." << endl;
-    string invalidPostfix = "3 + * 5";  // Invalid postfix expression
+    string invalidPostfix = "3 + 5 )";  // Invalid postfix expression
 
     try {
         tree.buildfromPostfix(invalidPostfix);

@@ -12,7 +12,7 @@ int main()
     // Testing the program
     ExpressionTree Tree;
     string PostfixExpression = "13 4 +";
-    string InfixExpression= " 1+2*3/(6+7)";
+    string InfixExpression= "-35 + 45 * -5";
     string PrefixExpression = "+ + * 3 4 - 5 2 7";
     cerr << "Building tree for: " << PostfixExpression << endl;
 

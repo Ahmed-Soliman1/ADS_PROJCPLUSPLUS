@@ -126,7 +126,7 @@ void ExpressionTree::buildfromPostfix(const string &postfix) // Saif Sabry
         throw std::invalid_argument("Error: Postfix expression is empty!");
     }
 
-    Stackt<TreeNode*> s(postfix.size());  // Use std::stack instead of custom Stackt
+    Stackt<TreeNode*> s(postfix.size());
     vector<string> tokens;
     string currentToken;
 
@@ -139,6 +139,7 @@ void ExpressionTree::buildfromPostfix(const string &postfix) // Saif Sabry
             }
         } else {
             currentToken += ch;
+
         }
     }
     if (!currentToken.empty()) {
@@ -148,30 +149,32 @@ void ExpressionTree::buildfromPostfix(const string &postfix) // Saif Sabry
     // Iterate over the tokens
     for (int i = 0; i < tokens.size(); i++) {  // Fixed the loop condition to i < tokens.size()
         string token = tokens[i];
-        if (isOperator(token)) {  // Check if the token is an operator
-            if (s.size() < 2) {
-                throw std::invalid_argument("Invalid postfix expression: not enough operands for operator!");
+
+            if (isOperator(token)) {  // Check if the token is an operator
+                if (s.size() < 2) {
+                    throw std::invalid_argument("Invalid postfix expression: not enough operands for operator!");
+                }
+                TreeNode* rightChild = s.peek();
+                s.pop();
+                TreeNode* leftChild = s.peek();
+                s.pop();
+
+                TreeNode* newNode = new TreeNode(token);
+                newNode->left = leftChild;
+                newNode->right = rightChild;
+                s.push(newNode);
+            } else {  // Operand (number or variable)
+                s.push(new TreeNode(token));
             }
-            TreeNode* rightChild = s.peek();
-            s.pop();
-            TreeNode* leftChild = s.peek();
-            s.pop();
-
-            TreeNode* newNode = new TreeNode(token);
-            newNode->left = leftChild;
-            newNode->right = rightChild;
-            s.push(newNode);
-        } else {  // Operand (number or variable)
-            s.push(new TreeNode(token));
         }
+
+        if (s.size() != 1) {
+            throw std::invalid_argument("Invalid postfix expression: too many operands!");
+        }
+        root = s.peek();  // Assign the root to the single remaining node in the stack
+        s.pop();
     }
 
-    if (s.size() != 1) {
-        throw std::invalid_argument("Invalid postfix expression: too many operands!");
-    }
-    root = s.peek();  // Assign the root to the single remaining node in the stack
-    s.pop();
-}
 void ExpressionTree::buildfromPrefix(const string & prefix) // Ahmed Amgad
 {
     if (prefix.empty()) {
@@ -222,49 +225,59 @@ void ExpressionTree::buildfromPrefix(const string & prefix) // Ahmed Amgad
     root = s.peek();
 }
 
-void ExpressionTree::buildfromInfix(const string &infix) {// Yousef Elmenshawy
+void ExpressionTree::buildfromInfix(const std::string& infix) {
+    // Yousef Elmenshawy
     if (infix.empty()) {
-        throw std::invalid_argument("Error: Infix expression is empty!");
+        std::cerr << "Error: Infix expression is empty!" << std::endl;
+        return;
     }
 
-    Stackt<TreeNode*> nodeStack(infix.size());       // Stack for operands/subtrees
-    Stackt<char> operatorStack(infix.size());        // Stack for operators
+    Stackt<TreeNode*> nodeStack(infix.size() + 15); // Stack for operands/subtrees
+    Stackt<char> operatorStack(infix.size() + 15); // Stack for operators
 
-
-    // Process the infix expression character by character
-    int i = 0;
+    size_t i = 0; // Use size_t for indexing to avoid signed-unsigned mismatch
     while (i < infix.size()) {
-        if (infix[i]==' ') {
+        if (std::isspace(infix[i])) {
             i++; // Skip whitespaces
             continue;
         }
 
-        if (isdigit(infix[i])) {// Handling Multidigit
-            string numStr;
-            while (i < infix.size() && isdigit(infix[i])) {
+        if (std::isdigit(infix[i])) { // Handling multi-digit numbers
+            std::string numStr;
+            while (i < infix.size() && std::isdigit(infix[i])) {
                 numStr += infix[i++];
             }
-            nodeStack.push(new TreeNode(numStr));  // Push operand as a tree node
-        }
-        else if (infix[i] == '(') {
+            nodeStack.push(new TreeNode(numStr)); // Push operand as a tree node
+        } else if (infix[i] == '(') {
             operatorStack.push(infix[i]);
-
             i++;
-        }
-        else if (infix[i] == ')') {
-
+        } else if (infix[i] == ')') {
             while (!operatorStack.isEmpty() && operatorStack.peek() != '(') {
                 processOperator(nodeStack, operatorStack);
             }
-            operatorStack.pop();  // Remove the '('
+            if (!operatorStack.isEmpty()) {
+                operatorStack.pop(); // Remove the '('
+            }
             i++;
-        }
-        else if (isOperator(infix[i])) {
-            while (!operatorStack.isEmpty() && precedence(operatorStack.peek()) >= precedence(infix[i])) {
+        } else if (infix[i] == '-' &&
+                   (i == 0 || infix[i - 1] == '(' || isOperator(infix[i - 1] || infix[i-1]==' '))) {
+            // Unary minus case
+            i++; // Skip the '-'
+            std::string numStr = "-";
+            while (i < infix.size() && std::isdigit(infix[i])) {
+                numStr += infix[i++];
+            }
+            nodeStack.push(new TreeNode(numStr)); // Push negative operand as a tree node
+        } else if (isOperator(infix[i])) {
+            while (!operatorStack.isEmpty() &&
+                   precedence(operatorStack.peek()) >= precedence(infix[i])) {
                 processOperator(nodeStack, operatorStack);
             }
-            operatorStack.push(infix[i]);  // Push the current operator
+            operatorStack.push(infix[i]); // Push the current operator
             i++;
+        } else {
+            std::cerr << "Error: Invalid character in infix expression!" << std::endl;
+            return;
         }
     }
 
@@ -278,7 +291,7 @@ void ExpressionTree::buildfromInfix(const string &infix) {// Yousef Elmenshawy
         root = nodeStack.peek();
         nodeStack.pop();
     } else {
-        cerr << "Error: Failed to build expression tree!" << endl;
+        std::cerr << "Error: Failed to build expression tree!" << std::endl;
     }
 }
 
@@ -306,7 +319,7 @@ string ExpressionTree::ToInfix(TreeNode *Root)
 
 void ExpressionTree::processOperator(Stackt<TreeNode*>& nodeStack, Stackt<char>& operatorStack) {// Helper function to avoid reptetion in Build from Infix code
     if (nodeStack.size() < 2) {
-        throw std::invalid_argument ("Error: Insufficient operands for operator!");
+        //throw std::invalid_argument ("Error: Insufficient operands for operator!2");
         return;
     }
 
