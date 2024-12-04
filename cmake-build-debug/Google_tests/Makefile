@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS"
+CMAKE_SOURCE_DIR = "C:\Users\Saifs\Documents\Applied Data Structures\ADS_PROJCPLUSPLUS"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Saifs\Documents\Applied Data Structures\ADS_PROJCPLUSPLUS\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,14 +131,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests\\CMakeFiles\progress.marks"
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" 0
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Saifs\Documents\Applied Data Structures\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" "C:\Users\Saifs\Documents\Applied Data Structures\ADS_PROJCPLUSPLUS\cmake-build-debug\Google_tests\\CMakeFiles\progress.marks"
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Saifs\Documents\Applied Data Structures\ADS_PROJCPLUSPLUS\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/clean
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,22 +147,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/preinstall
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/preinstall
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Google_tests/CMakeFiles/Google_Tests_run.dir/rule:
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/CMakeFiles/Google_Tests_run.dir/rule
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Google_tests/CMakeFiles/Google_Tests_run.dir/rule
 .PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/rule
 
 # Convenience name for target.
@@ -171,7 +171,7 @@ Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/rule
 
 # fast build rule for target.
 Google_Tests_run/fast:
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Google_tests\CMakeFiles\Google_Tests_run.dir\build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f Google_tests\CMakeFiles\Google_Tests_run.dir\build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
 .PHONY : Google_Tests_run/fast
 
 TestExpressionTree.obj: TestExpressionTree.cpp.obj
@@ -179,7 +179,7 @@ TestExpressionTree.obj: TestExpressionTree.cpp.obj
 
 # target to build an object file
 TestExpressionTree.cpp.obj:
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Google_tests\CMakeFiles\Google_Tests_run.dir\build.make Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f Google_tests\CMakeFiles\Google_Tests_run.dir\build.make Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj
 .PHONY : TestExpressionTree.cpp.obj
 
 TestExpressionTree.i: TestExpressionTree.cpp.i
@@ -187,7 +187,7 @@ TestExpressionTree.i: TestExpressionTree.cpp.i
 
 # target to preprocess a source file
 TestExpressionTree.cpp.i:
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Google_tests\CMakeFiles\Google_Tests_run.dir\build.make Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.i
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f Google_tests\CMakeFiles\Google_Tests_run.dir\build.make Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.i
 .PHONY : TestExpressionTree.cpp.i
 
 TestExpressionTree.s: TestExpressionTree.cpp.s
@@ -195,7 +195,7 @@ TestExpressionTree.s: TestExpressionTree.cpp.s
 
 # target to generate assembly for a file
 TestExpressionTree.cpp.s:
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f Google_tests\CMakeFiles\Google_Tests_run.dir\build.make Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.s
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f Google_tests\CMakeFiles\Google_Tests_run.dir\build.make Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.s
 .PHONY : TestExpressionTree.cpp.s
 
 # Help Target
@@ -225,6 +225,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d "D:\Ahmed\Applied Data Structures\Assignment 2\Cloned_Proj\ADS_PROJCPLUSPLUS\cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\Saifs\DOCUME~1\APPLIE~1\ADS_PR~1\CMAKE-~1 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

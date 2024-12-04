@@ -107,12 +107,17 @@ double ExpressionTree::evaluateExpression()
         if(isdigit(token[0]) || (token[0] == '-' && token.length() > 1 && isdigit(token[1]))) {
             Store.push(stod(token));
         }
-        else{
-
+        else if (isOperator(token)){
+            if (Store.size() < 2) {
+                throw runtime_error("Error: Insufficient operands for operator '" + token);
+            }
             double a2 = Store.peek(); Store.pop();
             double a1=Store.peek(); Store.pop();
             result= applyOperation(a1,a2,token[0]);
             Store.push(result);
+        }else
+        {
+            throw runtime_error("Error: Cannot Evaluate expression with non-numeric tokens!");
         }
 
     }
@@ -434,6 +439,14 @@ void ExpressionTree::displayConversionMenu(ExpressionTree& tree) {
                 break;
                 default:
                     cout << "Invalid choice! Please try again.\n";
+                    continue;
+            }
+            try
+            {
+                double result = tree.evaluateExpression();
+                cout << "The evaluated value of the expression is: " << result << "\n";
+            }catch (const std::exception& evalErr) {
+                cout << "The expression could not be evaluated. Reason: " << evalErr.what() << "\n";
             }
         } catch (const std::exception& e) {
             cout << e.what() << "\n";// just in case if there were any errors inside the switch case but it should be fine

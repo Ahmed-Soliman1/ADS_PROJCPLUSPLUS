@@ -1,4 +1,4 @@
-# Install script for directory: D:/Ahmed/Applied Data Structures/Assignment 2/Cloned_Proj/ADS_PROJCPLUSPLUS/Code_lib
+# Install script for directory: C:/Users/Saifs/Documents/Applied Data Structures/ADS_PROJCPLUSPLUS/Code_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

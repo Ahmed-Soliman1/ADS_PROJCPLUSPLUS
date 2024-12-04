@@ -1,6 +1,6 @@
 Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: \
- H:\ADS2\ADS_PROJCPLUSPLUS\Google_tests\TestExpressionTree.cpp \
- H:/ADS2/ADS_PROJCPLUSPLUS/Code_lib/expressiontree.h \
+ C:\Users\Saifs\Documents\Applied\ Data\ Structures\ADS_PROJCPLUSPLUS\Google_tests\TestExpressionTree.cpp \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/Code_lib/expressiontree.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -98,7 +98,7 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
- H:/ADS2/ADS_PROJCPLUSPLUS/Code_lib/Stackt.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/Code_lib/Stackt.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
@@ -144,8 +144,8 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- H:/ADS2/ADS_PROJCPLUSPLUS/Code_lib/TreeNode.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/Code_lib/TreeNode.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
@@ -170,8 +170,8 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/gtest-internal.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/gtest-port.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/gtest-internal.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/gtest-port.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/string.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
@@ -185,8 +185,8 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/custom/gtest-port.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/gtest-port-arch.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/custom/gtest-port.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/gtest-port-arch.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/direct.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/any \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/optional \
@@ -208,16 +208,16 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest-message.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/gtest-filepath.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/gtest-string.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest-message.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/gtest-filepath.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/gtest-string.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/gtest-type-util.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cxxabi.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cxxabi_tweaks.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest-death-test.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/gtest-death-test-internal.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest-matchers.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest-printers.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest-death-test.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/gtest-death-test-internal.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest-matchers.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest-printers.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
@@ -232,14 +232,14 @@ Google_tests/CMakeFiles/Google_Tests_run.dir/TestExpressionTree.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/custom/gtest-printers.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest-param-test.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/custom/gtest-printers.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest-param-test.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/internal/gtest-param-util.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/internal/gtest-param-util.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/assert.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest-test-part.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest_prod.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest-typed-test.h \
- H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests/lib/googletest/include/gtest/gtest_pred_impl.h
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest-test-part.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest_prod.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest-typed-test.h \
+ C:/Users/Saifs/DOCUME~1/APPLIE~1/ADS_PR~1/GOOGLE~1/lib/GOOGLE~2/include/gtest/gtest_pred_impl.h
