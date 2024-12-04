@@ -1,6 +1,6 @@
 Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.obj: \
- H:\ADS2\ADS_PROJCPLUSPLUS\Code_lib\Stackt.cpp \
- H:\ADS2\ADS_PROJCPLUSPLUS\Code_lib\Stackt.h \
+ D:\Ahmed\Applied\ Data\ Structures\Assignment\ 2\Cloned_Proj\ADS_PROJCPLUSPLUS\Code_lib\Stackt.cpp \
+ D:\Ahmed\Applied\ Data\ Structures\Assignment\ 2\Cloned_Proj\ADS_PROJCPLUSPLUS\Code_lib\Stackt.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -143,4 +143,4 @@ Code_lib/CMakeFiles/Code_lib.dir/Stackt.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- H:\ADS2\ADS_PROJCPLUSPLUS\Code_lib\TreeNode.h
+ D:\Ahmed\Applied\ Data\ Structures\Assignment\ 2\Cloned_Proj\ADS_PROJCPLUSPLUS\Code_lib\TreeNode.h

@@ -1,4 +1,4 @@
-# Install script for directory: H:/ADS2/ADS_PROJCPLUSPLUS/Google_tests
+# Install script for directory: D:/Ahmed/Applied Data Structures/Assignment 2/Cloned_Proj/ADS_PROJCPLUSPLUS/Google_tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/cmake_install.cmake")
+  include("D:/Ahmed/Applied Data Structures/Assignment 2/Cloned_Proj/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/lib/cmake_install.cmake")
 endif()
 

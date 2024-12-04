@@ -1,4 +1,4 @@
-# Install script for directory: H:/ADS2/ADS_PROJCPLUSPLUS
+# Install script for directory: D:/Ahmed/Applied Data Structures/Assignment 2/Cloned_Proj/ADS_PROJCPLUSPLUS
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Code_lib/cmake_install.cmake")
+  include("D:/Ahmed/Applied Data Structures/Assignment 2/Cloned_Proj/ADS_PROJCPLUSPLUS/cmake-build-debug/Code_lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/cmake_install.cmake")
+  include("D:/Ahmed/Applied Data Structures/Assignment 2/Cloned_Proj/ADS_PROJCPLUSPLUS/cmake-build-debug/Google_tests/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "H:/ADS2/ADS_PROJCPLUSPLUS/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Ahmed/Applied Data Structures/Assignment 2/Cloned_Proj/ADS_PROJCPLUSPLUS/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
