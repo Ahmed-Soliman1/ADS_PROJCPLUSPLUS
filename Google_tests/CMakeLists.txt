@@ -1,3 +1,4 @@
+cmake_policy(SET CMP0148 NEW)
 project(Google_tests)
 add_subdirectory(lib)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
