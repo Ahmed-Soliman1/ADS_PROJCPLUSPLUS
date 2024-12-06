@@ -23,34 +23,31 @@ TEST_F(ExpressionTreeTest, BuildFromPostfixAndEvaluate) {
     string postfix = "-35 45 + -5 *";
 
     tree.buildfromPostfix(postfix);
-    cout<<tree.ToInfix(tree.Root_Accesser())<<"----";
-    double result = tree.evaluateExpression();  // Expected result: 35.0
+    //cout<<tree.ToInfix(tree.Root_Accesser())<<"----";
+    double result = tree.evaluateExpression();
 
     cout << "Evaluating Postfix expression..." << endl;
 
     EXPECT_NEAR(result, -50.0, 1e-6) << "Expected result to be -50.0 from postfix evaluation.";
 
-    // Test ToInfix conversion (should output ((3+4)*5))
     string infix = tree.ToInfix(tree.Root_Accesser());
-    EXPECT_EQ(infix, "-35 + 45 * -5 ") << "Expected infix expression to be '3 + 4 * 5'.";
+    EXPECT_EQ(infix, "-35 + 45 * -5 ") << "Expected infix expression to be '-35 + 45 * -5'.";
 }
 
 // Test for building and evaluating from Prefix notation
 TEST_F(ExpressionTreeTest, BuildFromPrefixAndEvaluate) {
     cout << "Running test for prefix expression..." << endl;
-    string prefix = "* + -35 45 -5";  // This represents (3 + 4) * 5
+    string prefix = "* + -35 45 -5";
 
     tree.buildfromPrefix(prefix);
     //cout<<tree.ToInfix(tree.Root_Accesser())<<"----";
-    double result = tree.evaluateExpression();  // Expected result: 35.0
+    double result = tree.evaluateExpression();
 
     cout << "Evaluating Prefix expression..." << endl;
-    EXPECT_NEAR(result, -50.0, 1e-6) << "Expected result to be 35.0 from prefix evaluation.";
+    EXPECT_NEAR(result, -50.0, 1e-6) << "Expected result to be -50.0 from prefix evaluation.";
 
-    // Test ToInfix conversion (should output ((3+4)*5))
     string infix = tree.ToInfix(tree.Root_Accesser());
-    cout<<infix<<"----------------------------"<<endl;
-    EXPECT_EQ(infix, "-35 + 45 * -5 ") << "Expected infix expression to be '3 + 4 * 5'.";
+    EXPECT_EQ(infix, "-35 + 45 * -5 ") << "Expected infix expression to be '-35 + 45 * -5'.";
 }
 
 // Test for building and evaluating from Infix notation
@@ -59,12 +56,12 @@ TEST_F(ExpressionTreeTest, BuildFromInfixAndEvaluate) {
     string infix = "-35 + 45 * -5";
     tree.buildfromInfix(infix);
     cout<<tree.ToPostfix(tree.Root_Accesser())<<"----";
-    double result = tree.evaluateExpression();  // Expected result: 35.0
-    cout<<tree.ToPostfix(tree.Root_Accesser())<<"----";
+    double result = tree.evaluateExpression();
+    //cout<<tree.ToPostfix(tree.Root_Accesser())<<"----";
     cout << "Evaluating Infix expression..." << endl;
-    EXPECT_NEAR(result, -260.0, 1e-6) << "Expected result to be 35.0 from infix evaluation.";
+    EXPECT_NEAR(result, -260.0, 1e-6) << "Expected result to be -50.0 from infix evaluation.";
 
-    // Test ToPostfix conversion (should output 3 4 + 5 *)
+
     string postfix = tree.ToPostfix(tree.Root_Accesser());
     EXPECT_EQ(postfix, "-35 45 -5 * + ") << "Expected postfix expression to be '3 4 + 5 *'.";
 }
